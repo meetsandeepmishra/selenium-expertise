@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18587" started-at="2019-09-24T19:58:42Z" finished-at="2019-09-24T19:59:00Z">
+  <suite name="Default suite" duration-ms="26916" started-at="2019-10-07T21:28:52Z" finished-at="2019-10-07T21:29:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18587" started-at="2019-09-24T19:58:42Z" finished-at="2019-09-24T19:59:00Z">
-      <class name="com.training.sanity.tests.LostPswd">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LostPswd@3532ec19]" name="setUpBeforeClass" is-config="true" duration-ms="20" started-at="2019-09-24T19:58:42Z" finished-at="2019-09-24T19:58:42Z">
+    <test name="Default test" duration-ms="26916" started-at="2019-10-07T21:28:52Z" finished-at="2019-10-07T21:29:19Z">
+      <class name="com.training.sanity.tests.CourseAssessment">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.CourseAssessment@3532ec19]" name="setUpBeforeClass" is-config="true" duration-ms="81" started-at="2019-10-07T21:28:52Z" finished-at="2019-10-07T21:28:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LostPswd@3532ec19]" name="setUp" is-config="true" duration-ms="8713" started-at="2019-09-24T19:58:42Z" finished-at="2019-09-24T19:58:51Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.CourseAssessment@3532ec19]" name="setUp" is-config="true" duration-ms="8329" started-at="2019-10-07T21:28:52Z" finished-at="2019-10-07T21:29:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="editProfileResetPassword()[pri:0, instance:com.training.sanity.tests.LostPswd@3532ec19]" name="editProfileResetPassword" duration-ms="3857" started-at="2019-09-24T19:58:51Z" finished-at="2019-09-24T19:58:54Z">
+        <test-method status="PASS" signature="CourseTestModule()[pri:0, instance:com.training.sanity.tests.CourseAssessment@3532ec19]" name="CourseTestModule" duration-ms="12297" started-at="2019-10-07T21:29:00Z" finished-at="2019-10-07T21:29:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editProfileResetPassword -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.training.sanity.tests.LostPswd@3532ec19]" name="closebrowser" is-config="true" duration-ms="5959" started-at="2019-09-24T19:58:54Z" finished-at="2019-09-24T19:59:00Z">
+        </test-method> <!-- CourseTestModule -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.training.sanity.tests.CourseAssessment@3532ec19]" name="closebrowser" is-config="true" duration-ms="6134" started-at="2019-10-07T21:29:13Z" finished-at="2019-10-07T21:29:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-      </class> <!-- com.training.sanity.tests.LostPswd -->
+      </class> <!-- com.training.sanity.tests.CourseAssessment -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

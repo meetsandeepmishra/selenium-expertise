@@ -28,6 +28,9 @@ public class CourseCatalogPOM {
 	@FindBy(xpath="//*[@id=\"cm-content\"]/div/ul/li")
 	private WebElement courseCatalogPage;
 	
+	@FindBy(linkText="Homepage")
+	private WebElement homePage;
+	
 	@FindBy(xpath="//div/input[@class='form-control']")
 	private WebElement searchBar;
 	
@@ -36,6 +39,9 @@ public class CourseCatalogPOM {
 	
 	@FindBy(xpath="//*[@id=\"cm-content\"]/div/p/strong")
 	private WebElement searchResultPage;
+	
+	@FindBy (linkText="Course catalog")
+	private WebElement courseCataloglink;
 	
 	
 	public void clickCourseCatalog() {
@@ -54,6 +60,11 @@ public class CourseCatalogPOM {
 	public void validateSearchResult() {
 	String searchPage= this.searchResultPage.getText();
 	System.out.println("Search Result Page says: " + searchPage);}
+	
+	
+	public void clickHomePage() {
+	this.homePage.click();}
+	
+	public void clickcourseCataloglink() {
+	this.courseCataloglink.click();}
 	}
-	
-	
