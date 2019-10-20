@@ -1,5 +1,6 @@
 package com.training.pom;
 
+import java.awt.Desktop.Action;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -48,18 +49,54 @@ public class UserAddPOM {
 	@FindBy(id="password")
 	private WebElement Password;
 	
-	@FindBy(xpath="//div[@class='dropdown-menu open']/div/input")
-	private WebElement profileTxt;
+	@FindBy(xpath="//*[@id='status_select']")
+	private WebElement profile;
+	
+	@FindBy(xpath="//*[@id=\"user_add\"]/fieldset/div[10]/div[1]/div/div/div[2]/ul/li[1]/a/span")
+	private WebElement TrainerOption;
+	
+	@FindBy(xpath="//*[@id=\"user_add\"]/fieldset/div[10]/div[1]/div/div/div[2]/ul/li[2]/a/span")
+	private WebElement LearnerOption;
+	
+	@FindBy(xpath="//*[@id=\"user_add\"]/fieldset/div[10]/div[1]/div/div/div[2]/ul/li[3]/a/span")
+	private WebElement HumanRseourcesManagerOption;
+	
+	@FindBy(xpath="//*[@id=\"user_add\"]/fieldset/div[10]/div[1]/div/div/div[2]/ul/li[4]/a/span")
+	private WebElement sessionsAdminOption;
+	
+	@FindBy(xpath="//*[@id=\"user_add\"]/fieldset/div[10]/div[1]/div/div/div[2]/ul/li[5]/a/span")
+	private WebElement studentsuperiorOption;
+	
+	@FindBy(xpath="//*[@id=\"user_add\"]/fieldset/div[10]/div[1]/div/div/div[2]/ul/li[6]/a/span")
+	private WebElement InviteeOption;
 	
 	@FindBy(name="submit")
 	private WebElement add;
 	
+	@FindBy(xpath="//*[@id='navbar']/ul[2]/li[2]/a")
+	private WebElement siteowner;
+	
+	@FindBy(id="logout_button")
+	private WebElement logout;
+	
+	public void clickLogoutButton() {
+		Actions act= new Actions(driver);
+		act.moveToElement(siteowner).click(siteowner).perform();
+		this.logout.click();
+		
+	}
+	
+
 	public void clickAdd() {
 		this.add.click();
 	}
 	
 	public void enterProfile(String Profiletext) {
-		this.profileTxt.sendKeys(Profiletext);}
+		Select sel= new Select(profile);
+		sel.selectByVisibleText(Profiletext);
+		
+	}
+
 	
 	public void enterPassword(String Password) {
 		this.Password.sendKeys(Password);
