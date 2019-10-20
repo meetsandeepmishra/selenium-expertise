@@ -128,7 +128,7 @@ public class CreateTakeQuiz {
 	  loginPOM.sendPassword("admin@123");
 	  loginPOM.clickLoginBtn();
 	  adminTestPOM.clickReporting();
-	  // Test case fails in the last section, as 'Sunil' isn't registered in followed students section.Pending test steps are similar to test case 2 (AdminTest.java) though.
+	  // Note: 2nd Testcase (ELTC_071) can be tested successfully almost 80%. It fails in the last as 'Sunil' Test data isnt there in the 'Followed Students' section. Pending steps though are similar as that of 1st test case (ELTC_070).
 	  
 	  
 	  
