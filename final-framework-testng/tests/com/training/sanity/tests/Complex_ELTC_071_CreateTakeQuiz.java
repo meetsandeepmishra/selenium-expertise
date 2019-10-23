@@ -10,6 +10,7 @@ import com.training.generics.ScreenShot;
 import com.training.pom.AdminTestPOM;
 import com.training.pom.CourseCatalogPOM;
 import com.training.pom.CourseTestPOM;
+import com.training.pom.CreateTakeQuizPOM;
 import com.training.pom.LoginPOM;
 import com.training.pom.ProfilePOM;
 import com.training.pom.ProjectCreationPOM;
@@ -21,7 +22,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
-public class CreateTakeQuiz {
+public class Complex_ELTC_071_CreateTakeQuiz {
 	private WebDriver driver;
 	private String baseUrl;
 	private LoginPOM loginPOM;
@@ -29,6 +30,7 @@ public class CreateTakeQuiz {
 	private CourseTestPOM courseTestPOM;
 	private AdminTestPOM adminTestPOM;
 	private UserAddPOM userAddPOM;
+	private CreateTakeQuizPOM createTakeQuizPOM;
 	private static Properties properties;
 	private ScreenShot screenShot;
   
@@ -47,6 +49,7 @@ public class CreateTakeQuiz {
 		courseTestPOM= new CourseTestPOM(driver);
 		adminTestPOM= new AdminTestPOM(driver);
         userAddPOM= new UserAddPOM(driver);
+        createTakeQuizPOM= new CreateTakeQuizPOM(driver);
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
 		// open the browser 
@@ -128,7 +131,9 @@ public class CreateTakeQuiz {
 	  loginPOM.sendPassword("admin@123");
 	  loginPOM.clickLoginBtn();
 	  adminTestPOM.clickReporting();
-	  // Note: 2nd Testcase (ELTC_071) can be tested successfully almost 80%. It fails in the last as 'Sunil' Test data isnt there in the 'Followed Students' section. Pending steps though are similar as that of 1st test case (ELTC_070).
+	  createTakeQuizPOM.clickFollowedStudents();
+	  
+	  // Note: 2nd Testcase (ELTC_071) can be tested successfully almost 80%. It fails in the last as 'Sunil' Test data isn't there in the 'Followed Students' section. Pending steps though are similar as that of 1st test case (ELTC_070).
 	  
 	  
 	  

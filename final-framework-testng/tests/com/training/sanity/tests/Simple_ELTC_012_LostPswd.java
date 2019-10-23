@@ -16,7 +16,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
-public class LostPswd {
+public class Simple_ELTC_012_LostPswd {
 	private WebDriver driver;
 	private String baseUrl;
 	private LoginPOM loginPOM;

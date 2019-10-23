@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="63503" started-at="2019-10-17T21:32:34Z" finished-at="2019-10-17T21:33:37Z">
+  <suite name="Default suite" duration-ms="26671" started-at="2019-10-23T18:53:41Z" finished-at="2019-10-23T18:54:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="63503" started-at="2019-10-17T21:32:34Z" finished-at="2019-10-17T21:33:37Z">
-      <class name="com.training.sanity.tests.CreateTakeQuiz">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.CreateTakeQuiz@3532ec19]" name="setUpBeforeClass" is-config="true" duration-ms="17" started-at="2019-10-17T21:32:34Z" finished-at="2019-10-17T21:32:34Z">
+    <test name="Default test" duration-ms="26671" started-at="2019-10-23T18:53:41Z" finished-at="2019-10-23T18:54:08Z">
+      <class name="com.training.sanity.tests.Simple_ELTC_012_LostPswd">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.Simple_ELTC_012_LostPswd@3532ec19]" name="setUpBeforeClass" is-config="true" duration-ms="36" started-at="2019-10-23T18:53:41Z" finished-at="2019-10-23T18:53:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.CreateTakeQuiz@3532ec19]" name="setUp" is-config="true" duration-ms="13877" started-at="2019-10-17T21:32:34Z" finished-at="2019-10-17T21:32:48Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.Simple_ELTC_012_LostPswd@3532ec19]" name="setUp" is-config="true" duration-ms="16422" started-at="2019-10-23T18:53:41Z" finished-at="2019-10-23T18:53:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="adminTestModule()[pri:0, instance:com.training.sanity.tests.CreateTakeQuiz@3532ec19]" name="adminTestModule" duration-ms="43556" started-at="2019-10-17T21:32:48Z" finished-at="2019-10-17T21:33:31Z">
+        <test-method status="PASS" signature="editProfileResetPassword()[pri:0, instance:com.training.sanity.tests.Simple_ELTC_012_LostPswd@3532ec19]" name="editProfileResetPassword" duration-ms="4206" started-at="2019-10-23T18:53:58Z" finished-at="2019-10-23T18:54:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- adminTestModule -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.training.sanity.tests.CreateTakeQuiz@3532ec19]" name="closebrowser" is-config="true" duration-ms="6022" started-at="2019-10-17T21:33:31Z" finished-at="2019-10-17T21:33:37Z">
+        </test-method> <!-- editProfileResetPassword -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.training.sanity.tests.Simple_ELTC_012_LostPswd@3532ec19]" name="closebrowser" is-config="true" duration-ms="5965" started-at="2019-10-23T18:54:02Z" finished-at="2019-10-23T18:54:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-      </class> <!-- com.training.sanity.tests.CreateTakeQuiz -->
+      </class> <!-- com.training.sanity.tests.Simple_ELTC_012_LostPswd -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

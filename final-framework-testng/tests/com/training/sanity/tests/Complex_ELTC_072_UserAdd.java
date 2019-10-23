@@ -19,7 +19,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
-public class UserAdd {
+public class Complex_ELTC_072_UserAdd {
 	private WebDriver driver;
 	private String baseUrl;
 	private LoginPOM loginPOM;

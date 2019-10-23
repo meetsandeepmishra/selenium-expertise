@@ -15,7 +15,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
-public class EditProfileFunction {
+public class Simple_ELTC_011_EditProfileFunction {
 	private WebDriver driver;
 	private String baseUrl;
 	private LoginPOM loginPOM;
